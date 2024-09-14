@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Personal Information -->
+        <section id="personal-info">
+            <h1>John Doe</h1>
+            <p>Contact: johndoe@example.com | +123-456-7890</p>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+        </section>
+
+        <!-- Education -->
+        <section id="education-section">
+            <h2 class="toggle-heading" data-target="education">Education</h2>
+            <div id="education" class="collapsible">
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <p>University of XYZ, 2015-2019</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills-section">
+            <h2 class="toggle-heading" data-target="skills">Skills</h2>
+            <div id="skills" class="collapsible">
+                <ul>
+                    <li>HTML, CSS, JavaScript, TypeScript</li>
+                    <li>React, Angular, Vue</li>
+                    <li>Node.js, Express</li>
+                    <li>SQL, MongoDB</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="work-experience-section">
+            <h2 class="toggle-heading" data-target="work-experience">Work Experience</h2>
+            <div id="work-experience" class="collapsible">
+                <p><strong>Software Engineer</strong> - TechCorp (2019-2023)</p>
+                <p>Developed and maintained web applications using JavaScript frameworks.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
